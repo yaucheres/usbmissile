@@ -24,15 +24,15 @@ class centerMissileDevice:
        if self.dev is None:
          raise ValueError('Device not found')
        self.dev.set_configuration()
-       self.conf = self.dev.get_active_configuration()
-       self.intf = self.conf[(0,0)]
-       self.ep = usb.util.find_descriptor(
-        self.intf,
-        # match the first IN endpoint
-        custom_match = \
-        lambda e: \
-            usb.util.endpoint_direction(e.bEndpointAddress) == \
-            usb.util.ENDPOINT_IN)
+       #self.conf = self.dev.get_active_configuration()
+       #self.intf = self.conf[(0,0)]
+       #self.ep = usb.util.find_descriptor(
+       #self.intf,
+       # # match the first IN endpoint
+       #custom_match = \
+       # lambda e: \
+       #     usb.util.endpoint_direction(e.bEndpointAddress) == \
+       #     usb.util.ENDPOINT_IN)
        return
       except NoMissilesError, e:
         raise NoMissilesError()
