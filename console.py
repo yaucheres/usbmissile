@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 import missile_center
+from missile_center import NoMissilesError
+from missile_center import missileCenter
+from missile_center import MissileMoveError
 
 class MissileNoDisplay:
   def run(self):
