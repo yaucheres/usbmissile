@@ -37,6 +37,6 @@ class missileCenter:
       #sleep while the missile is doing his move
       time.sleep(0.5)
       #then stop
-      self.dev.ctrl_transfer(0x21, 0x09,0x0300,0x00,[0x5f, STOP, 0xe0, 0xff, 0xfe])
-     except:
-       raise MissileMoveError()
+      self.dev.ctrl_transfer(0x21, 0x09,0x0300,0x00,[0x5f, self.STOP, 0xe0, 0xff, 0xfe])
+     except e:
+       raise MissileMoveError(e.strerror)
