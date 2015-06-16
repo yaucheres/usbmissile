@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" ng-app="usbMissile">
+<head>
+    <meta charset="utf-8">
+    <title>USB Missile</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/frontend.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+<body ng-controller="MissileCmd" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('top')">TOP</a></div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('left')">LEFT</a></div>
+            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('fire')">FIRE</a></div>
+            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('right')">RIGHT</a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('down')">DOWN</a></div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

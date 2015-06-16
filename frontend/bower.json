@@ -1,0 +1,16 @@
+{
+  "name": "usbmissile-frontend",
+  "description": "iA frontend to interact with the python API controlling the USBMissile",
+  "version": "0.0.1",
+  "homepage": "ihttps://github.com/yaucheres/usbmissile",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-mocks": "1.4.x",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x"
+  }
+}
