@@ -1,0 +1,7 @@
+#remote .row {
+    padding: 5px;
+}
+
+#remote .row div {
+    text-align: center;
+}

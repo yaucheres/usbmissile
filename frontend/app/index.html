@@ -9,22 +9,25 @@
     <script src="js/controllers.js"></script>
 </head>
 <body ng-controller="MissileCmd" >
-    <div class="container-fluid">
+    <div id="remote" class="container-fluid">
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('up')">TOP</a></div>
-            <div class="col-md-4"></div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('up')">TOP</a></div>
+            <div class="col-xs-4"></div>
         </div>
         <div class="row">
-            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('left')">LEFT</a></div>
-            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('fire')">FIRE</a></div>
-            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('right')">RIGHT</a></div>
+            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('left')">LEFT</a></div>
+            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('fire')">FIRE</a></div>
+            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('right')">RIGHT</a></div>
         </div>
         <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('down')">DOWN</a></div>
-            <div class="col-md-4"></div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('down')">DOWN</a></div>
+            <div class="col-xs-4"></div>
         </div>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4"><a class="btn btn-default" href="#" role="button" ng-click="cmd('fireall')">FIRE ALL</a></div>
+        </div>        
     </div>
     
 </body>
