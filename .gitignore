@@ -1,2 +1,4 @@
 __*
 *.pyc
+frontend/app/bower_components/
+frontend/node_modules/
