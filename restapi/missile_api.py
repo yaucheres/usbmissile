@@ -21,17 +21,17 @@ class Container(api_hour.Container):
         self.servers['http'].ah_container = self  # keep a reference in HTTP server to Container
 
         # Define HTTP routes
-        self.servers['http'].router.add_route('GET','/left',self.left)
-        self.servers['http'].router.add_route('GET','/right',self.right)
-        self.servers['http'].router.add_route('GET','/up',self.up)
-        self.servers['http'].router.add_route('GET','/down',self.down)
-        self.servers['http'].router.add_route('GET','/leftup',self.leftup)
-        self.servers['http'].router.add_route('GET','/rightup',self.rightup)
-        self.servers['http'].router.add_route('GET','/leftdown',self.leftdown)
-        self.servers['http'].router.add_route('GET','/rightdown',self.rightdown)
-        self.servers['http'].router.add_route('GET','/pause',self.pause)
-        self.servers['http'].router.add_route('GET','/fire',self.fire)
-        self.servers['http'].router.add_route('GET','/fireall',self.fireall)
+        self.servers['http'].router.add_route('GET','/api/left',self.left)
+        self.servers['http'].router.add_route('GET','/api/right',self.right)
+        self.servers['http'].router.add_route('GET','/api/up',self.up)
+        self.servers['http'].router.add_route('GET','/api/down',self.down)
+        self.servers['http'].router.add_route('GET','/api/leftup',self.leftup)
+        self.servers['http'].router.add_route('GET','/api/rightup',self.rightup)
+        self.servers['http'].router.add_route('GET','/api/leftdown',self.leftdown)
+        self.servers['http'].router.add_route('GET','/api/rightdown',self.rightdown)
+        self.servers['http'].router.add_route('GET','/api/pause',self.pause)
+        self.servers['http'].router.add_route('GET','/api/fire',self.fire)
+        self.servers['http'].router.add_route('GET','/api/fireall',self.fireall)
 
     def sendCommandToMissileCenter(self,command, commandName):
         self.missile = missileCenter() 
